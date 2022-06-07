@@ -8,6 +8,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 ## !! IMPORTANT !!
-You may redistribute, or reproduce all or part of this site in any form after 
+You may redistribute or reproduce all or part of this site in any form after 
 providing proper credits to the author, [Rizul Bhardwaj](https://www.linkedin.com/in/rizul)
 
