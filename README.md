@@ -1,6 +1,6 @@
 # PLAYWARE
 
-### This is a landing page for an imaginary cloud gaming company called Playware.
+### Landing page for an imaginary cloud gaming company called Playware.
 
 ## Technologies
 
