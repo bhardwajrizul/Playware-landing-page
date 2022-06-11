@@ -7,14 +7,15 @@
 The entire webpage is created from the ground up using 
 - HTML5 as markup and 
 - CSS for styling. 
-- **SASS** (CSS Extension) was used and was compiled using **node-sass**    
+- **SASS** was used as a CSS extension. 
 
 
+**If u want change CSS, you need to update SASS code and run the followng command in your terminal**
 ```bash
-  npm install node-sass
+  npm run build-css
 ```
 
-**This is not necessary as I have not provided the SASS files instead final CSS code after compiling SASS is provided.**
+
 
 ## Responsiveness
 The Website is currently only optimized for Desktop use
