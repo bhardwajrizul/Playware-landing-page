@@ -9,19 +9,17 @@ The entire webpage is created from the ground up using
 - CSS for styling. 
 - **SASS** was used as a CSS extension. 
 
-
-**If u want change CSS, you need to update SASS code and run the followng command in your terminal**
+## Dev-dependencies
+*To change CSS, modify SASS code and run the followng command in project terminal*
 ```bash
   npm run build-css
 ```
-
+**For additional functionality open package.json file for all npm scripts.**
 
 
 ## Responsiveness
-The Website is currently only optimized for Desktop use
-(1920*1080).
-
-**Support for multiple screen sizes will be provided soon**
+THe website is now updated and is responsive across various devices.
+**Support for multiple screen sizes has now been provided**
 
 
 ## Contributing
