@@ -24,7 +24,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: "linea-basic-10" !important;
