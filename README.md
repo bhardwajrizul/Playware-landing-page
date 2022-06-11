@@ -27,7 +27,7 @@ The entire webpage is created from the ground up using
 
 
 ## Responsiveness
-THe website is now updated and is responsive across various devices.
+The website is now updated and is responsive across various devices.
 **Support for multiple screen sizes has now been provided**
 
 
