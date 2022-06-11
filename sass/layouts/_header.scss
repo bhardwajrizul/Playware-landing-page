@@ -1,0 +1,44 @@
+
+.header {
+    position: relative;
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($primary-color-light, 0.6),
+        rgba($primary-color-dark, 0.6)),
+        url(../img/hero.jpg); 
+    background-size: cover;
+    background-position: top;
+
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+
+
+    @include respond("phone") {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 20rem;
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 2rem;
+        left: 4rem;
+    }
+    
+    &__logo {
+        height: 12rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+}

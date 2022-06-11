@@ -1,0 +1,164 @@
+
+.btn {
+
+    &,
+    &:visited, 
+    &:link {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+    
+        transition: all .2s;
+        position: relative;
+        font-family: inherit;
+        font-size: $default-font-size;
+        
+        // Change for <button>
+        border: none;
+        cursor: pointer;
+
+        @include respond("tab-land") {
+            font-size: $default-font-size-large;
+            padding: 2.5rem 8rem;
+        }
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+        
+    }
+    
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+    
+    &--white {
+        background-color: $color-white ;
+        color: $color-grey-dark;
+
+        &::after {
+            background-color: $color-white ;
+        }
+
+    }
+
+    &--green {
+        background-color: $primary-color ;
+        color: $color-white;
+
+        &::after {
+            background-color: $primary-color;
+        }
+
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    
+    &--animated {
+        animation: moveInBottom 0.5s ease-out 0.75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+.btn-learn-more{
+    position: relative;
+    display: inline-block;
+    .btn-text {
+        &:link,
+        &:visited {
+            font-size: $default-font-size;
+            color: $primary-color;
+            display: inline-block;
+            text-decoration: none;
+            padding: 1rem;
+
+            border-left: 2px solid $primary-color;
+            
+            // Slide Animation
+
+            background-size: 200% 100%;
+            background-position: right;
+            background-image: linear-gradient(to right, $primary-color 0,  $primary-color 50%, $color-white 50%,  $color-white 100%);
+            transition: all .4s ease;
+
+            @include respond("tab-land") {
+                font-size: calc(#{$default-font-size-large} * 1.5);
+                padding: 1rem 2rem;
+            }
+        }
+    
+        &:hover {
+            color: $color-white;
+            background-position: left;
+        }
+    
+    }
+}
+
+.btn-read-all-stories{
+    position: relative;
+    display: inline-block;
+    .btn-text {
+        &:link,
+        &:visited {
+            font-size: $default-font-size;
+            color: $primary-color;
+            display: inline-block;
+            text-decoration: none;
+            padding: 1rem;
+
+            border-left: 2px solid $primary-color;
+            
+            // Slide Animation
+
+            background-size: 200% 100%;
+            background-position: right;
+            
+            background-image: linear-gradient(to right,
+                                                $primary-color 0,
+                                                $primary-color 50%, 
+                                                rgba($color-white, 0.6) 50%,  
+                                                rgba($color-white, 0.6) 100%);
+
+            transition: all .4s ease;
+
+            @include respond("tab-land") {
+                font-size: calc(#{$default-font-size-large} * 1.5);
+                padding: 2.5rem 4rem;
+            }
+
+        }
+
+
+    
+        &:hover {
+            color: $color-white;
+            background-position: left;
+        }
+    
+    }
+}

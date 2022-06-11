@@ -1,14 +1,29 @@
 {
   "name": "Playware",
   "version": "1.0.0",
-  "description": "",
+  "description": "A front end landing page for cloud gaming company Playware",
   "main": "index.js",
   "scripts": {
-    "node-sass": "node-sass -w sass/main.scss css/style.css"
+    "node-sass": "node-sass -w sass/main.scss css/styles.css",
+    "dev-server": "live-server",
+    "start": "npm-run-all --parallel dev-server node-sass",
+
+
+    "compile-sass": "node-sass sass/main.scss css/style.comp.css",
+    "combine-css": "concat -o css/styles.concat.css css/icon-font.css css/style.comp.css",
+    "prefix-css": " postcss --use autoprefixer -b 'last 10 versions'  css/styles.concat.css -o css/styles.prefix.css",
+    "compress-css": "node-sass css/styles.prefix.css css/styles.css --output-style compressed",
+    "build-css": "npm-run-all compile-sass combine-css prefix-css compress-css"
   },
-  "author": "",
+  "author": "Rizul Bhardwaj",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "autoprefixer": "^10.4.7",
+    "concat": "^1.0.3",
+    "live-server": "^1.2.2",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0"
   }
 }
