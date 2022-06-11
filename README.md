@@ -16,7 +16,7 @@ The entire webpage is created from the ground up using
 ```bash
   npm run start
 ```
-**This will produce a proper styles.css file
+**This will produce a readable styles.css file**
 
 #### For final Build
 ```bash
