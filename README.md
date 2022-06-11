@@ -10,10 +10,19 @@ The entire webpage is created from the ground up using
 - **SASS** was used as a CSS extension. 
 
 ## Dev-dependencies
-*To change CSS, modify SASS code and run the followng command in project terminal*
+
+#### During development phase
+*modify SASS code after running the followng command in project terminal*
+```bash
+  npm run start
+```
+**This will produce a proper styles.css file
+
+#### For final Build
 ```bash
   npm run build-css
 ```
+
 **For additional functionality open package.json file for all npm scripts.**
 
 
