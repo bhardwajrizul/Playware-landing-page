@@ -2,6 +2,8 @@
 
 ### Landing page for an imaginary cloud gaming company called Playware.
 
+Website Live here :- https://bhardwajrizul.github.io/Playware-landing-page/
+
 ## Technologies
 
 The entire webpage is created from the ground up using 
