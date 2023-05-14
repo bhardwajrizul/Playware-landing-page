@@ -6,7 +6,7 @@ Website Live here :- https://bhardwajrizul.github.io/Playware-landing-page/
 
 ## Technologies
 
-The entire webpage is created from the ground up using 
+The entire webpage is created from the ground up using   
 - HTML5 as markup and 
 - CSS for styling. 
 - **SASS** was used as a CSS extension. 
@@ -29,9 +29,9 @@ The entire webpage is created from the ground up using
 
 
 ## Responsiveness
-The website is now updated and is responsive across various devices.
+The website has now been updated and is responsive across various devices.
 
-**Support for multiple screen sizes has now been provided**
+**Support for multiple screens has now been provided**
 
 
 ## Contributing
